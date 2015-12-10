@@ -55,7 +55,7 @@ Clicking on the tick icon/button will compile your code. Converting the code you
 
 If everything is ok then click the 'right arrow' icon/button. This will upload your code to the Arduino.
 
-#### Open Serial Monitor
+#### Open Serial Monitor (*ctrl + shift + m*)
 
 Cicking on the magnifying glass will open up the Serial Monitor and allow you to see what position the potentiometer is currently at.
 
@@ -318,7 +318,7 @@ Serial.println(buttonState);
 Compile errors? Upload errors?   
 Where in our code do we define `buttonPin`? How does the code know to read from pin number 6?
 
-### Open the Serial Monitor
+### Open the Serial Monitor (*ctrl + shift + m*)
 
 Let's take a look at the values that we get back from the button. What is interesting about this? Nothing?! Just ones and zeros! Perhaps but how does this effect our next coding task? 
 
@@ -451,16 +451,12 @@ void open() {
 }
 ```
 
-#### Discussion
-
-What has changed here?
-
 #### Compile and upload 
 
 Compile errors? Upload errors?   
-Where in our code do we define `buttonPin`? How does the code know to read from pin number 6?
 
+#### Open the Serial Monitor (*ctrl + shift + m*)
 
-
+Move the potentiometer to the first number and push the button. Every time you push the button you should see the values you are storing on the serial monitor.   
 
 
