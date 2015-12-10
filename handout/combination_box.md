@@ -14,11 +14,49 @@ Below is a link to a great video of a home made wooden dial lock. Shows the inne
 This is how a mechanical dial locks work. Today we will be simluate the inner workings of a combination lock with electronic components and Arduino.
 
 
-### 1. Analog input - Receiving the value of a potentiometer
+## 1. Analog input - Receiving the value of our potentiometer
 
-** TASK: ** Build the circuit
+** Question: ** Why is our potentiometer an analog input?
+
+### Build the circuit
 
 
+### Add your code
+```
+void setup() {
+  // Start the serial communication between the Arduino and computer.
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Store the main analog input values.
+  int potValue = analogRead(A0);
+
+  // Concatenate/join together strings for a neat outout.
+  String output = "Sensor value: ";
+  output += potValue;
+
+  // Output into serial monitor for debugging.
+  Serial.println(output);
+}
+```
+
+### Compile & Upload your code
+
+Clicking on the tick icon/button will compile your code. Converting the code you've written into a format that Arduino understands. It will also tell you if you have any errors in your code. 
+
+If everything is ok then click the 'right arrow' icon/button. This will upload your code to the Arduino.
+
+### Open Serial Monitor
+
+Cicking on the magnifying glass will open up the Serial Monitor and allow you to see what position the potentiometer is currently at.
+
+
+## 2. Analog input and Analog output - Controlling our LED
+
+### Build the circuit
+
+### Add your code
 
 
 
