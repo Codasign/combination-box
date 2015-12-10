@@ -69,7 +69,7 @@ Cicking on the magnifying glass will open up the Serial Monitor and allow you to
 
 #### Build the circuit
 
-![Potentiometer Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_led_bb.jpg)
+![Potentiometer + LED Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_led_bb.jpg)
 
 #### Change your code
 
