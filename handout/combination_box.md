@@ -309,14 +309,16 @@ pinMode(buttonPin, INPUT_PULLUP);
 
 (2)  Add this line to your `loop()` function
 ```
-// Store the current button state. 
 int buttonState = digitalRead(buttonPin);
 Serial.println(buttonState);
 ```
 
 #### Compile and upload 
 
-Compile errors? Upload errors?
+Compile errors? Upload errors?   
+Where in our code do we define `buttonPin`? How does the code know to read from pin number 6?
+
+
 
 
 
