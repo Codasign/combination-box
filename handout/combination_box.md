@@ -291,8 +291,8 @@ What's going on? How has the code changed and what are we expecting to happen?
 
 What is the result? We can change the output from an LED to a piezo?
 
-### 5. Use the input from a button
-
+### 5. Digital input - Read the value from our button
+**Question:** Why is the button a digital input?
 **Question:** How does a button work in a circuit?
 
 ### Build the circuit
@@ -322,7 +322,25 @@ Where in our code do we define `buttonPin`? How does the code know to read from 
 
 Let's take a look at the values that we get back from the button. What is interesting about this? Nothing?! Just ones and zeros! Perhaps but how does this effect our next coding task? 
 
+### Change the code
 
+(1) Replace the following lines
+```
+if(potValue > minPotValue && potValue < maxPotValue){
+	open();
+}
+```
+With the following
+```
+if( buttonState == LOW && lastButtonState == HIGH ){
+  lastButtonState = LOW;
+  open();
+}
+if( lastButtonState == LOW && buttonState == HIGH ){
+  lastButtonState = HIGH;
+  reset();
+}
+```
 
 
 
