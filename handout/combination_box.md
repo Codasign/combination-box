@@ -51,14 +51,14 @@ void loop() {
 
 #### Compile & upload your code
 
-![Compile and Upload)[./run-your-code.jpg]
+![Compile and Upload](./run-your-code.jpg)
 
 Clicking on the tick icon/button will compile your code. Converting the code you've written into a format that Arduino understands. It will also tell you if you have any errors in your code. 
 
 If everything is ok then click the 'right arrow' icon/button. This will upload your code to the Arduino.
 
 #### Open Serial Monitor (*ctrl + shift + m*)
-![Open the serial monitor)[./open-serial-monitor.jpg]
+![Open the serial monitor](./open-serial-monitor.jpg)
 
 Cicking on the magnifying glass will open up the Serial Monitor and allow you to see what position the potentiometer is currently at.
 
