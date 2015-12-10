@@ -471,3 +471,14 @@ Why does the count start at 0 and not 1? Because...
 ```
 int CODE[] = { 1, 2, 3 }; // Super secret code. Probably best to change this.  
 ```
+
+(2) Add the following code to the bottom of our `loop()` function
+```
+  // If we have reached 3 values and the combination is correct.
+  if( count == 3 ){
+    if( CODE[0] == combinationAttempt[0] && CODE[1] == combinationAttempt[1] && CODE[2] == combinationAttempt[2]){
+      open();  
+    }
+    reset();
+  }
+```
