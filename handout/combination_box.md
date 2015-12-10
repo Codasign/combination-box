@@ -27,7 +27,7 @@ This is how a mechanical dial locks work. Today we will be simluate the inner wo
 
 #### Build the circuit
 
-POT
+![Potentiometer Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_bb.jpg)
 
 #### Add the code
 ```
@@ -69,7 +69,8 @@ Cicking on the magnifying glass will open up the Serial Monitor and allow you to
 
 #### Build the circuit
 
-POT AND LED
+
+![Potentiometer Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_led_bb.jpg)
 
 #### Change your code
 
