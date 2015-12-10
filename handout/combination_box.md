@@ -323,11 +323,18 @@ Where in our code do we define `buttonPin`? How does the code know to read from 
 Let's take a look at the values that we get back from the button. What is interesting about this? Nothing?! Just ones and zeros! Perhaps but how does this effect our next coding task? 
 
 ### Change the code
+(1) Add a new function
 
-(1) Replace the following lines
+```
+void reset(){
+  isOpen = false;
+}
+```
+
+(2) Replace the following lines
 ```
 if(potValue > minPotValue && potValue < maxPotValue){
-	open();
+  open();
 }
 ```
 With the following
@@ -341,10 +348,6 @@ if( lastButtonState == LOW && buttonState == HIGH ){
   reset();
 }
 ```
-
-
-
-
 
 
 
