@@ -13,6 +13,13 @@ Below is a link to a great video of a home made wooden dial lock. Shows the inne
 
 This is how a mechanical dial locks work. Today we will be simluate the inner workings of a combination lock with electronic components and Arduino.
 
+### Before we start
+
+* What are people's experience of Arduino?
+* Open Arduino IDE
+* Turn on line numbers
+* Select board
+* TODO...
 
 ### 1. Analog input - Receiving the value of a potentiometer
 
@@ -148,7 +155,7 @@ void loop() {
   Serial.println(potValue);
 
   /*
-  if(potValue > foo && potValue < bar){
+  if(potValue > minPotValue && potValue < maxPotValue){
     open();
   }
   */
@@ -187,4 +194,10 @@ Compile errors? Upload errors?
 #### Change the code
 
 (1) We don't want the servo to `open()` when the sketch starts. How do we stop that from happening?
-(2) 
+(2) We only want the servo to `open()` when the potentiometer is at a certain point. How do we make this happen? Look at line number 35.
+
+#### Compile and upload 
+
+
+### 4. Create our dial positions and add the button
+
