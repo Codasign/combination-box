@@ -457,6 +457,11 @@ Compile errors? Upload errors?
 
 #### Open the Serial Monitor (*ctrl + shift + m*)
 
-Move the potentiometer to the first number and push the button. Every time you push the button you should see the values you are storing on the serial monitor.   
+Move the potentiometer to any dial position. Push the button. Every time you push the button you should see the values you are storing on the serial monitor.   
 
+### 7. Compare our dial positions with the lock `CODE[]` 
+
+**Question:** What is a `for` loop? What is it used for?
+
+#### Change the code
 
