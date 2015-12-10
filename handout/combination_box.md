@@ -77,6 +77,14 @@ Any errors? If so what do the error messages say?
 
 #### Change your code
 
+3. **Replace** this line of code:
+
+```
+analogWrite(ledPin, potValue / 4);
+```
+
+with this:
+
 ```
   if(potValue > 500 && potValue < 600){
     // Tell the LED pin to turn on
