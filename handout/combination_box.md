@@ -201,5 +201,13 @@ Compile errors? Upload errors?
 
 ### 4. Create our dial positions
 
+**Question:** How many dial positions shall we have? And how does this change the strength of the lock? 
+
+#### Build the circuit
+
+POT + LED + SERVO
+
+
+
 
 
