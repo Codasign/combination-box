@@ -130,7 +130,6 @@ Servo myServo;
 
 int potPin = A0;
 int servoPin = 6;
-
 boolean isOpen = false;
 
 void setup() {
