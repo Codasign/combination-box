@@ -199,7 +199,7 @@ Compile errors? Upload errors?
 #### Compile and upload 
 
 
-### 4. Create our dial positions and add the button
+### 4. Create our dial positions
 
 
 
