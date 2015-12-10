@@ -301,6 +301,22 @@ POT + LED + SERVO + BUTTON
 
 ### Change the code
 
+(1) We want to prepare the buttonPin on Arduino to be a special input (`INPUT_PULLUP`). Add this line to your `setup()` function
+
+```
+pinMode(buttonPin, INPUT_PULLUP);
+```
+
+(2)  Add this line to your `loop()` function
+```
+// Store the current button state. 
+int buttonState = digitalRead(buttonPin);
+Serial.println(buttonState);
+```
+
+#### Compile and upload 
+
+Compile errors? Upload errors?
 
 
 
