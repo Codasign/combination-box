@@ -1,4 +1,4 @@
-![Codasign logo](http://codasign.com/wp-content/themes/codasign/library/images/logo.png)
+![Codasign logo](https://raw.githubusercontent.com/Codasign/combination-box/master/handout/logo.png)
 Combination Dial Lock Workshop
 ======================
 
