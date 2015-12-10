@@ -292,6 +292,7 @@ What's going on? How has the code changed and what are we expecting to happen?
 What is the result? We can change the output from an LED to a piezo?
 
 ### 5. Digital input - Read the value from our button
+
 **Question:** Why is the button a digital input?
 **Question:** How does a button work in a circuit?
 
@@ -315,8 +316,7 @@ Serial.println(buttonState);
 
 #### Compile and upload 
 
-Compile errors? Upload errors?   
-Where in our code do we define `buttonPin`? How does the code know to read from pin number 6?
+Compile errors? It happens. Not to worry. Where in our code do we define `buttonPin`? How does the code know to read from pin number 6?
 
 ### Open the Serial Monitor (*ctrl + shift + m*)
 
@@ -453,7 +453,7 @@ void open() {
 
 #### Compile and upload 
 
-Compile errors? Upload errors?   
+Compile errors? Any bugs in our code? Gremlins in the system?
 
 #### Open the Serial Monitor (*ctrl + shift + m*)
 
@@ -482,3 +482,12 @@ int CODE[] = { 1, 2, 3 }; // Super secret code. Probably best to change this.
     reset();
   }
 ```
+
+### Discussion
+
+What are we doing here? What do we expect to happen?
+
+### Compile & upload
+
+We should now have a lockable box for your precious things. You can change the `CODE[]` to anything you want.
+
