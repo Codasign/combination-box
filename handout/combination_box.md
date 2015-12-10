@@ -2,7 +2,7 @@
 Combination Dial Lock Workshop
 ======================
 
-## What is a Combination Dial Lock?
+### What is a Combination Dial Lock?
 ![Combination Lock](https://media2.giphy.com/media/ABfNx2KM7dB7O/200.gif)
 
 A single dial combination lock is a type of locking mechanism found on padlocks, lockers, or safes. It uses a single dial which interacts with several aligned discs or cams. A lock of this type is opened by rotating the dial clockwise to the first number, then counterclockwise to the second, and so on alternating direction until the last numeral is reached. 
@@ -14,14 +14,14 @@ Below is a link to a great video of a home made wooden dial lock. Shows the inne
 This is how a mechanical dial locks work. Today we will be simluate the inner workings of a combination lock with electronic components and Arduino.
 
 
-## 1. Analog input - Receiving the value of our potentiometer
+### 1. Analog input - Receiving the value of our potentiometer
 
 **Question:** Why is our potentiometer an analog input?
 
-### Build the circuit
+#### Build the circuit
 
 
-### Add your code
+#### Add your code
 ```
 void setup() {
   // Start the serial communication between the Arduino and computer.
@@ -41,24 +41,24 @@ void loop() {
 }
 ```
 
-### Compile & Upload your code
+#### Compile & Upload your code
 
 Clicking on the tick icon/button will compile your code. Converting the code you've written into a format that Arduino understands. It will also tell you if you have any errors in your code. 
 
 If everything is ok then click the 'right arrow' icon/button. This will upload your code to the Arduino.
 
-### Open Serial Monitor
+#### Open Serial Monitor
 
 Cicking on the magnifying glass will open up the Serial Monitor and allow you to see what position the potentiometer is currently at.
 
 
-## 2. Analog input and Analog output - Controlling our LED
+### 2. Analog input and Analog output - Controlling our LED
 
 **Question:** What do the `setup()` and `loop()`  functions do?
 
-### Build the circuit
+#### Build the circuit
 
-### Change your code
+#### Change your code
 
 1. Add this line to your `setup()` function
 
