@@ -354,7 +354,11 @@ if( lastButtonState == LOW && buttonState == HIGH ){
 What is our `reset()` function doing?
 What is the `lastButtonState` variable doing? 
 
-### 6. Collecting the dial positions
+### 6. Collecting the dial `positions[]`
+
+**Question:** What is an array? 
+
+### Add the code
 
 ```
  /*
@@ -446,6 +450,16 @@ void open() {
   isOpen = true;
 }
 ```
+
+#### Discussion
+
+What has changed here?
+
+#### Compile and upload 
+
+Compile errors? Upload errors?   
+Where in our code do we define `buttonPin`? How does the code know to read from pin number 6?
+
 
 
 
