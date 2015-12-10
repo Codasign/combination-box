@@ -69,7 +69,6 @@ Cicking on the magnifying glass will open up the Serial Monitor and allow you to
 
 #### Build the circuit
 
-
 ![Potentiometer Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_led_bb.jpg)
 
 #### Change your code
@@ -119,7 +118,7 @@ Any errors? No! Super.
 
 #### Build the circuit
 
-POT AND SERVO
+![Potentiometer Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_servo_bb.jpg)
 
 #### Add some code
 
