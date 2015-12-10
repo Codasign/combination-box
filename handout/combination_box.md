@@ -129,6 +129,7 @@ Any errors? No! Super.
 Servo myServo;
 
 int potPin = A0;
+v
 int servoPin = 6;
 boolean isOpen = false;
 
