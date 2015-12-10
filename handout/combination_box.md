@@ -29,7 +29,7 @@ This is how a mechanical dial locks work. Today we will be simluate the inner wo
 
 POT
 
-#### Add some code
+#### Add the code
 ```
 void setup() {
   // Start the serial communication between the Arduino and computer.
