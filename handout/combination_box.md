@@ -123,12 +123,6 @@ Any errors? No! Super.
 #### Add some code
 
 ```
- /*
- * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
- * to decide when we want start moving the servo.
- * @author Your Name Here
- */
-
 #include <Servo.h>
 
 // Create 'Servo' object to control a servo 
@@ -196,7 +190,8 @@ Compile errors? Upload errors?
 
 #### Change the code
 
-(1) We don't want the servo to `open()` when the sketch starts. How do we stop that from happening?
+(1) We don't want the servo to `open()` when the sketch starts. How do we stop that from happening?  
+
 (2) We only want the servo to `open()` when the potentiometer is at a certain point. How do we make this happen? Look at line number 35.
 
 #### Compile & upload 
@@ -206,19 +201,9 @@ Compile errors? Upload errors?
 
 **Question:** How many dial positions shall we have? And how does this change the strength of the lock? 
 
-#### Build the circuit
-
-POT + LED + SERVO (No change?)
-
 #### Add our code
 
 ```
- /*
- * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
- * to decide when we want start moving the servo.
- * @author Your Name Here
- */
-
 #include <Servo.h>
 
 // Create 'Servo' object to control a servo 
@@ -364,12 +349,6 @@ What is the `lastButtonState` variable doing?
 ### Add the code
 
 ```
- /*
- * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
- * to decide when we want start moving the servo.
- * @author Your Name Here
- */
-
 #include <Servo.h>
 
 // Create 'Servo' object to control a servo 
