@@ -16,7 +16,7 @@ This is how a mechanical dial locks work. Today we will be simluate the inner wo
 
 ## 1. Analog input - Receiving the value of our potentiometer
 
-** Question: ** Why is our potentiometer an analog input?
+**Question:** Why is our potentiometer an analog input?
 
 ### Build the circuit
 
@@ -54,9 +54,21 @@ Cicking on the magnifying glass will open up the Serial Monitor and allow you to
 
 ## 2. Analog input and Analog output - Controlling our LED
 
+**Question:** What do the `setup()` and `loop()`  functions do?
+
 ### Build the circuit
 
-### Add your code
+### Change your code
 
+1. Add this line to your `setup()` function
+
+```
+pinMode(ledPin, OUTPUT);
+```
+
+2. Add this line to your `loop()` function
+```
+analogWrite(ledPin, potValue / 4);
+```
 
 
