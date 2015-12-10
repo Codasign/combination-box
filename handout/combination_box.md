@@ -51,7 +51,7 @@ void loop() {
 
 #### Compile & upload your code
 
-![Compile and Upload](./run-your-code.jpg)
+![Compile and Upload](https://raw.githubusercontent.com/Codasign/combination-box/master/handout/run-your-code.png)
 
 Clicking on the tick icon/button will compile your code. Converting the code you've written into a format that Arduino understands. It will also tell you if you have any errors in your code. 
 
