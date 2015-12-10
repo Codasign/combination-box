@@ -27,7 +27,7 @@ This is how a mechanical dial locks work. Today we will be simluate the inner wo
 
 #### Build the circuit
 
-POT
+![Potentiometer Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_bb.jpg)
 
 #### Add the code
 ```
@@ -69,7 +69,7 @@ Cicking on the magnifying glass will open up the Serial Monitor and allow you to
 
 #### Build the circuit
 
-POT AND LED
+![Potentiometer + LED Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_led_bb.jpg)
 
 #### Change your code
 
@@ -118,25 +118,19 @@ Any errors? No! Super.
 
 #### Build the circuit
 
-POT AND SERVO
+![Potentiometer + Servo Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_servo_bb.jpg)
 
 #### Add some code
 
 ```
- /*
- * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
- * to decide when we want start moving the servo.
- * @author Your Name Here
- */
-
 #include <Servo.h>
 
 // Create 'Servo' object to control a servo 
 Servo myServo;
 
 int potPin = A0;
+int ledPin = 5;
 int servoPin = 6;
-
 boolean isOpen = false;
 
 void setup() {
@@ -196,7 +190,8 @@ Compile errors? Upload errors?
 
 #### Change the code
 
-(1) We don't want the servo to `open()` when the sketch starts. How do we stop that from happening?
+(1) We don't want the servo to `open()` when the sketch starts. How do we stop that from happening?  
+
 (2) We only want the servo to `open()` when the potentiometer is at a certain point. How do we make this happen? Look at line number 35.
 
 #### Compile & upload 
@@ -206,19 +201,9 @@ Compile errors? Upload errors?
 
 **Question:** How many dial positions shall we have? And how does this change the strength of the lock? 
 
-#### Build the circuit
-
-POT + LED + SERVO (No change?)
-
 #### Add our code
 
 ```
- /*
- * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
- * to decide when we want start moving the servo.
- * @author Your Name Here
- */
-
 #include <Servo.h>
 
 // Create 'Servo' object to control a servo 
@@ -261,8 +246,7 @@ void loop() {
   if(potValue > minPotValue && potValue < maxPotValue){
     open();
   }
-
-
+  
 }
 
 void open() {  
@@ -301,7 +285,7 @@ What is the result? We can change the output from an LED to a piezo?
 
 ### Build the circuit
 
-POT + LED + SERVO + BUTTON
+![Potentiometer + Servo + Button Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_servo_button_bb.jpg)
 
 ### Change the code
 
@@ -364,12 +348,6 @@ What is the `lastButtonState` variable doing?
 ### Add the code
 
 ```
- /*
- * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
- * to decide when we want start moving the servo.
- * @author Your Name Here
- */
-
 #include <Servo.h>
 
 // Create 'Servo' object to control a servo 
