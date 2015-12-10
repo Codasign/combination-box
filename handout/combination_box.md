@@ -58,6 +58,7 @@ Clicking on the tick icon/button will compile your code. Converting the code you
 If everything is ok then click the 'right arrow' icon/button. This will upload your code to the Arduino.
 
 #### Open Serial Monitor (*ctrl + shift + m*)
+![Open the serial monitor)[./open-serial-monitor.jpg]
 
 Cicking on the magnifying glass will open up the Serial Monitor and allow you to see what position the potentiometer is currently at.
 
