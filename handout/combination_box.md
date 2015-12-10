@@ -14,14 +14,15 @@ Below is a link to a great video of a home made wooden dial lock. Shows the inne
 This is how a mechanical dial locks work. Today we will be simluate the inner workings of a combination lock with electronic components and Arduino.
 
 
-### 1. Analog input - Receiving the value of our potentiometer
+### 1. Analog input - Receiving the value of a potentiometer
 
-**Question:** Why is our potentiometer an analog input?
+**Question:** Why is the potentiometer an analog input?
 
 #### Build the circuit
 
+POT
 
-#### Add your code
+#### Add some code
 ```
 void setup() {
   // Start the serial communication between the Arduino and computer.
@@ -52,21 +53,23 @@ If everything is ok then click the 'right arrow' icon/button. This will upload y
 Cicking on the magnifying glass will open up the Serial Monitor and allow you to see what position the potentiometer is currently at.
 
 
-### 2. Analog input and Analog output - Controlling our LED
+### 2. Analog input and Analog output - Controlling an LED
 
 **Question:** What do the `setup()` and `loop()`  functions do?
 
 #### Build the circuit
 
+POT AND LED
+
 #### Change your code
 
-1. Add this line to your `setup()` function
+(1)  Add this line to your `setup()` function
 
 ```
 pinMode(ledPin, OUTPUT);
 ```
 
-2. Add this line to your `loop()` function
+(2)  Add this line to your `loop()` function
 ```
 analogWrite(ledPin, potValue / 4);
 ```
@@ -77,7 +80,7 @@ Any errors? If so what do the error messages say?
 
 #### Change your code
 
-3. **Replace** this line of code:
+(3)  **Replace** this line of code:
 
 ```
 analogWrite(ledPin, potValue / 4);
@@ -95,6 +98,93 @@ with this:
   }
 ```
 
+#### Compile and upload 
+
+Any errors? No! Super.
+
+### 3. Analog input and servo - Controlling a servo!
+
+**Question:** What is a function?
+
+#### Build the circuit
+
+POT AND SERVO
+
+#### Add some code
+
+```
+ /*
+ * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
+ * to decide when we want start moving the servo.
+ * @author Your Name Here
+ */
+
+#include <Servo.h>
+
+// Create 'Servo' object to control a servo 
+Servo myServo;
+
+int potPin = A0;
+int servoPin = 6;
+
+boolean isOpen = false;
+
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+
+  // Attaches the servo to correct pin.
+  myServo.attach(servoPin);
+
+  open();
+}
+
+void loop() {
+
+  // Store the main analog input values.
+  int potValue = analogRead(potPin);
+
+  // Output into serial monitor for debugging.
+  Serial.println(potValue);
+
+  /*
+  if(potValue > foo && potValue < bar){
+    open();
+  }
+  */
+}
+
+void open() {  
+  
+  if(isOpen == true){
+    return;
+  }
+  
+  // Goes from 0 to 180 in steps of 1 
+  for(int pos = 0; pos <= 180; pos += 1) {                  
+    
+    // Tell servo to go to position in variable 'pos'
+    // This function is expecting degrees.
+    myServo.write(pos);             
+  
+    // Waits 15ms for the servo to reach the position.
+    delay(15);                 
+  }
+  
+  isOpen = true;
+}
+```
+
+#### PAUSE
+
+What do we expect to happen when we upload our code??
 
 
+#### Compile and upload 
 
+Compile errors? Upload errors?
+
+#### Change the code
+
+(1) We don't want the servo to `open()` when the sketch starts. How do we stop that from happening?
+(2) 
