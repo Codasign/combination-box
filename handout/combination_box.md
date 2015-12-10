@@ -291,7 +291,7 @@ What's going on? How has the code changed and what are we expecting to happen?
 
 What is the result? We can change the output from an LED to a piezo?
 
-### 5. Create our dial positions
+### 5. Use the input from a button
 
 **Question:** How does a button work in a circuit?
 
@@ -320,7 +320,7 @@ Where in our code do we define `buttonPin`? How does the code know to read from 
 
 ### Open the Serial Monitor
 
-Let's take a look at the values that we get back from the button. What is interesting about this? Nothing?! Just ones and zeros! Perhaps. How does this effect our next coding task? 
+Let's take a look at the values that we get back from the button. What is interesting about this? Nothing?! Just ones and zeros! Perhaps but how does this effect our next coding task? 
 
 
 
