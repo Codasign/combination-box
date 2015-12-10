@@ -459,9 +459,15 @@ Compile errors? Upload errors?
 
 Move the potentiometer to any dial position. Push the button. Every time you push the button you should see the values you are storing on the serial monitor.   
 
-### 7. Compare our dial positions with the lock `CODE[]` 
+#### Discussion
 
-**Question:** What is a `for` loop? What is it used for?
+Why does the count start at 0 and not 1? Because...
+
+### 7. Compare our dial positions with the lock `CODE[]` 
 
 #### Change the code
 
+(1) Add this new variable at the top of our sketch. Above the `setup()` function
+```
+int CODE[] = { 1, 2, 3 }; // Super secret code. Probably best to change this.  
+```
