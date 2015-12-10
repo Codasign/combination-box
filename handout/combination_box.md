@@ -196,7 +196,7 @@ Compile errors? Upload errors?
 (1) We don't want the servo to `open()` when the sketch starts. How do we stop that from happening?
 (2) We only want the servo to `open()` when the potentiometer is at a certain point. How do we make this happen? Look at line number 35.
 
-#### Compile and upload 
+#### Compile & upload 
 
 
 ### 4. Create our dial positions
@@ -205,7 +205,101 @@ Compile errors? Upload errors?
 
 #### Build the circuit
 
-POT + LED + SERVO
+POT + LED + SERVO (No change?)
+
+#### Add our code
+
+```
+ /*
+ * Analog input & sweep - Using the analog input sensor (e.g. potenitometer) 
+ * to decide when we want start moving the servo.
+ * @author Your Name Here
+ */
+
+#include <Servo.h>
+
+// Create 'Servo' object to control a servo 
+Servo myServo;
+
+int potPin = A0;
+int ledPin = 5;
+int servoPin = 6;
+boolean isOpen = false;
+int minPotValue = 500;
+int maxPotValue = 600;
+int dialPosition = 0;
+
+void setup() {
+  // initialize serial communication at 9600 bits per second:
+  Serial.begin(9600);
+
+  // Attaches the servo to correct pin.
+  myServo.attach(servoPin);
+
+  // open();
+}
+
+void loop() {
+
+  // Store the main analog input values.
+  int potValue = analogRead(potPin);
+
+  // Flash the light everytime the value is divisible by 100.
+  // Wait for 200ms and turn off.
+  if( dialPosition != round(potValue / 100) ){
+    digitalWrite(ledPin, HIGH);
+    delay(200);
+    digitalWrite(ledPin, LOW);
+  }
+  // Dividing the potValue by 100 to give 10 positions.
+  dialPosition = round(potValue / 100);
+  
+  // If the potValue is above min and below max...
+  if(potValue > minPotValue && potValue < maxPotValue){
+    open();
+  }
+
+
+}
+
+void open() {  
+  
+  if(isOpen == true){
+    return;
+  }
+  
+  // Goes from 0 to 180 in steps of 1 
+  for(int pos = 0; pos <= 180; pos += 1) {                  
+    
+    // Tell servo to go to position in variable 'pos'
+    // This function is expecting degrees.
+    myServo.write(pos);             
+  
+    // Waits 15ms for the servo to reach the position.
+    delay(15);                 
+  }
+  
+  isOpen = true;
+}
+```
+
+#### PAUSE
+
+What's going on? How has the code changed and what are we expecting to happen?
+
+#### Compile & upload
+
+What is the result? We can change the output from an LED to a piezo?
+
+### 5. Create our dial positions
+
+**Question:** How does a button work in a circuit?
+
+### Build the circuit
+
+POT + LED + SERVO + BUTTON
+
+### Change the code
 
 
 
