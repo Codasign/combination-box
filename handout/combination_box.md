@@ -318,6 +318,14 @@ Serial.println(buttonState);
 Compile errors? Upload errors?   
 Where in our code do we define `buttonPin`? How does the code know to read from pin number 6?
 
+### Open the Serial Monitor
+
+Let's take a look at the values that we get back from the button. What is interesting about this? Nothing?! Just ones and zeros! Perhaps. How does this effect our next coding task? 
+
+
+
+
+
 
 
 
