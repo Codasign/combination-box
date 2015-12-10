@@ -118,7 +118,7 @@ Any errors? No! Super.
 
 #### Build the circuit
 
-![Potentiometer Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_servo_bb.jpg)
+![Potentiometer + Servo Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_servo_bb.jpg)
 
 #### Add some code
 
