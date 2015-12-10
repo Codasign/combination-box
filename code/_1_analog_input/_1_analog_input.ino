@@ -11,11 +11,11 @@ void setup() {
 
 void loop() {
   // Store the main analog input values.
-  int sensorValue = analogRead(A0);
+  int potValue = analogRead(A0);
 
   // Concatenate/join together strings for a neat outout.
   String output = "Sensor value: ";
-  output += sensorValue;
+  output += potValue;
 
   // Output into serial monitor for debugging.
   Serial.println(output);
