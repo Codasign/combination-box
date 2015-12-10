@@ -286,6 +286,7 @@ What is the result? We can change the output from an LED to a piezo?
 ### Build the circuit
 
 ![Potentiometer + Servo + Button Fritzing](https://raw.githubusercontent.com/Codasign/combination-box/master/fritzing/potentiometer_servo_button_bb.jpg)
+
 ### Change the code
 
 (1) We want to prepare the buttonPin on Arduino to be a special input (`INPUT_PULLUP`). Add this line to your `setup()` function
