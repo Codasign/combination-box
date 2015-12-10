@@ -41,7 +41,7 @@ void loop() {
 }
 ```
 
-#### Compile & Upload your code
+#### Compile & upload your code
 
 Clicking on the tick icon/button will compile your code. Converting the code you've written into a format that Arduino understands. It will also tell you if you have any errors in your code. 
 
@@ -70,5 +70,23 @@ pinMode(ledPin, OUTPUT);
 ```
 analogWrite(ledPin, potValue / 4);
 ```
+
+#### Compile and upload 
+
+Any errors? If so what do the error messages say?
+
+#### Change your code
+
+```
+  if(potValue > 500 && potValue < 600){
+    // Tell the LED pin to turn on
+    digitalWrite(ledPin, HIGH);
+  } else {
+    // Tell the LED pin to turn off
+    digitalWrite(ledPin, LOW);
+  }
+```
+
+
 
 
