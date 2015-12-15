@@ -32,15 +32,16 @@ void loop() {
   // Store the main analog input values.
   int potValue = analogRead(potPin);
 
+  int thisDialPosition = round(potValue / 100);
   // Flash the light everytime the value is divisible by 100.
   // Wait for 200ms and turn off.
-  if( dialPosition != round(potValue / 100) ){
+  if( dialPosition != thisDialPosition ){
     digitalWrite(ledPin, HIGH);
     delay(200);
     digitalWrite(ledPin, LOW);
   }
   // Dividing the potValue by 100 to give 10 positions.
-  dialPosition = round(potValue / 100);
+  dialPosition = thisDialPosition;
   
   // If the potValue is above min and below max...
   if(potValue > minPotValue && potValue < maxPotValue){
